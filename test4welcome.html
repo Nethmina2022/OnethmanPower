@@ -4,23 +4,15 @@
   <title>OnethManpowert3</title>
   <link rel="icon" type="image/x-icon" href="Artboard 1-100.jpg">
   <meta charset="utf-8">
-  <style>
-    * {
-        box-sizing: border-box;
-    }
-    section::after {
-      content: "";
-      display: table;
-      clear: both;
-    }
-  
-  </style>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <script src="CalSalary.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
+
 <body style="background-image: url(welcomp.png);background-repeat: no-repeat;background-size: cover; background-attachment: fixed;">
+
     <Header style="position: static; ">
         <nav>
             <div class="w3-panel w3-round-xxlarge w3-meduim" style="padding-top: 10px;padding-bottom: 10px; 
@@ -33,7 +25,7 @@
                         <a class="nav-link" href="test3home.html" style="color: rgb(0, 0, 0);">Home</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#"style="color:  rgb(0, 0, 0);"onclick="document.getElementById('id02').style.display='block'">Manage Salary</a>
+                        <a class="nav-link" href="#"style="color:  rgb(0, 0, 0);"onclick="document.getElementById('manageS').style.display='block'">Manage Salary</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="#"style="color:  rgb(0, 0, 0);">Get Invoice</a>
@@ -46,6 +38,7 @@
             </div>
         </nav>
   </Header>
+
   <section>
     <p>
         <div class="w3-panel w3-round-xxlarge" style="position: relative; background-color: aliceblue; width:25%; left: 80px; top: 100px; padding-top: 100px;padding-bottom: 100px;">
@@ -54,7 +47,7 @@
             </ul>
             <ul  class="nav justify-content-center">
                 <h3>
-                    <button class="w3-button w3-black w3-round-xxlarge w3-border w3-border-black" style="color: rgb(255, 255, 255);width: 100%; position: relative; top: 50px;">Mark Attendace</button>
+                  <button class="w3-button w3-black w3-round-xxlarge w3-border w3-border-black" style="color: rgb(255, 255, 255);width: 100%; position: relative; top: 50px;"><a href="attendenc.html" class="nav-link" style="color: aliceblue;">Mark Attendace</a></button>
                 </h3>
             </ul>
         </div>
@@ -79,16 +72,91 @@
             </ul>
         </div>
     </p>
-    <div id="id02" class="w3-modal">
+
+    <div id="manageS" class="w3-modal">
         <div class="w3-modal-content w3-animate-top w3-panel w3-round-xxlarge w3-meduim w3-white" style="padding-top: 100px; padding-bottom: 100px;">
           <header class="w3-container "> 
-            <span onclick="document.getElementById('id02').style.display='none'" 
+            <span onclick="document.getElementById('manageS').style.display='none'" 
             class="w3-button w3-round-xxlarge" style="position: relative; bottom:95px; left: 770px; width: 10%;">&times;</span>
             <img src="logow.jpg" alt="" width="120px" style="position: relative; left:250px; top:-40px;">
           </header>
           <form>
+
             <div class="mb-3 mt-3">
-              <input type="number" class="form-control w3-round-xxlarge" id="Eid" placeholder="Enter Emp Id" name="Eid" style=" width:50%; position: relative; left:200px; padding-top: 20px;padding-bottom: 20px;">
+              <select name="cars" class="form-control w3-round-xxlarge" id="Eid" name="eid" style=" width:50%; position: relative; left:200px; padding-top: 20px;padding-bottom: 20px;">
+                <option value="E01">E01</option>
+                <option value="E02">E02</option>
+                <option value="E03">E03</option>
+                <option value="E04">E04</option>
+                <option value="E05">E05</option>
+                <option value="E06">E06</option>
+                <option value="E07">E07</option>
+                <option value="E08">E08</option>
+                <option value="E09">E09</option>
+                <option value="E10">E10</option>
+                <option value="E11">E11</option>
+                <option value="E12">E12</option>
+                <option value="E13">E13</option>
+                <option value="E14">E14</option>
+                <option value="E15">E15</option>
+                <option value="E16">E16</option>
+                <option value="E17">E17</option>
+                <option value="E18">E17</option>
+                <option value="E19">E19</option>
+                <option value="E20">E20</option>
+                <option value="E21">E21</option>
+                <option value="E22">E22</option>
+                <option value="E23">E23</option>
+                <option value="E24">E24</option>
+                <option value="E25">E24</option>
+                <option value="E26">E26</option>
+                <option value="E27">E27</option>
+                <option value="E28">E28</option>
+                <option value="E29">E29</option>
+                <option value="E30">E30</option>
+                <option value="E31">E31</option>
+                <option value="E32">E32</option>
+                <option value="E33">E33</option>
+                <option value="E34">E34</option>
+                <option value="E35">E35</option>
+                <option value="E36">E36</option>
+                <option value="E37">E37</option>
+                <option value="E38">E38</option>
+                <option value="E39">E39</option>
+                <option value="E40">E40</option>
+                <option value="E41">E41</option>
+                <option value="E42">E42</option>
+                <option value="E43">E43</option>
+                <option value="E44">E44</option>
+                <option value="E45">E45</option>
+                <option value="E46">E46</option>
+                <option value="E47">E47</option>
+                <option value="E48">E48</option>
+                <option value="E49">E49</option>
+                <option value="E50">E50</option>
+                <option value="E51">E51</option>
+                <option value="E52">E52</option>
+                <option value="E53">E53</option>
+                <option value="E54">E54</option>
+                <option value="E55">E55</option>
+                <option value="E56">E56</option>
+                <option value="E57">E57</option>
+                <option value="E58">E58</option>
+                <option value="E59">E59</option>
+                <option value="E60">E60</option>
+                <option value="E61">E61</option>
+                <option value="E62">E62</option>
+                <option value="E63">E63</option>
+                <option value="E64">E64</option>
+                <option value="E65">E65</option>
+                <option value="E66">E66</option>
+                <option value="E67">E67</option>
+                <option value="E68">E68</option>
+                <option value="E69">E69</option>
+                <option value="E70">E70</option>
+                <option value="E71">E71</option>
+              </select>  
+
             </div>
             <div class="mb-3">
               <input type="date" class="form-control w3-round-xxlarge" id="dte" placeholder="Enter Date " name="dte"style="width:50%; position: relative; left:200px; padding-top: 20px;padding-bottom: 20px;">
@@ -100,7 +168,7 @@
                 <input type="text" class="form-control w3-round-xxlarge" id="customer" placeholder="Enter Customer Name" name="customer" style="width:50%; position: relative; left:200px; padding-top: 20px;padding-bottom: 20px;">
               </div>
             <div class="mb-3">
-                <input type="text" class="form-control w3-round-xxlarge" id="bn" placeholder="Enter Brand Name" name="bn"style="width:50%; position: relative; left:200px; padding-top: 20px;padding-bottom: 20px;">
+                <input type="text" class="form-control w3-round-xxlarge" id="brnd" placeholder="Enter Brand Name" name="bn"style="width:50%; position: relative; left:200px; padding-top: 20px;padding-bottom: 20px;">
             </div>
             <div class="mb-3">
               <input type="text" class="form-control w3-round-xxlarge" id="cid" placeholder="Enter Container" name="cid"style="width:50%; position: relative; left:200px; padding-top: 20px;padding-bottom: 20px;">
@@ -118,18 +186,25 @@
               <input type="text" class="form-control w3-round-xxlarge" id="rate" placeholder="Enter Rate Value" name="rate"style="width:50%; position: relative; left:200px; padding-top: 20px;padding-bottom: 20px;">
             </div>
             <div class="mb-3">
-              <input type="text" class="form-control w3-round-xxlarge" id="basic" placeholder="Enter Basic" name="basic"style="width:50%; position: relative; left:200px; padding-top: 20px;padding-bottom: 20px;">
+              <input type="text" class="form-control w3-round-xxlarge" id="basic" placeholder="Enter Basic Value" name="rate"style="width:50%; position: relative; left:200px; padding-top: 20px;padding-bottom: 20px;">
             </div>
             <div class="mb-3">
-              <input type="text" class="form-control w3-round-xxlarge" id="meal" placeholder="Meal" name="meal"style="width:50%; position: relative; left:200px; padding-top: 20px;padding-bottom: 20px;">
+              <input type="text" class="form-control w3-round-xxlarge" id="meal" placeholder="Enter Meal Value" name="rate"style="width:50%; position: relative; left:200px; padding-top: 20px;padding-bottom: 20px;">  
             </div>
-            <button class="w3-button w3-blue w3-round-xxlarge w3-border w3-border-white" style="color: rgb(0, 0, 0); width: 30%;position: relative; left: 300px; top: 40px;
-            padding-top: 15px;padding-bottom: 15px;">Calulate</button>
-            <div class="mb-3">
-              <input type="text" class="form-control w3-round-xxlarge" id="total"style="width:50%; position: relative; left:200px; padding-top: 20px;padding-bottom: 20px; top:70px">
+
+            <button type="button" onclick="calsalary()" class="w3-button w3-blue w3-round-xxlarge w3-border w3-border-white" style="color: rgb(0, 0, 0); width: 30%;padding-top: 15px;padding-bottom: 15px;">Calulate</button>
+
+            <div class="mb-3" >
+              <input type="text" id="total" class="form-control w3-round-xxlarge" style="width:50%; position: relative; left:200px; padding-top: 20px;padding-bottom: 20px; top:70px">
             </div>
+
           </form>
         </div>
+
+
+
+
+
     </div>      
           <div id="id03" class="w3-modal">
             <div class="w3-modal-content w3-animate-top w3-panel w3-round-xxlarge w3-meduim w3-white" style="padding-top: 100px; padding-bottom: 100px;">
